@@ -1,0 +1,31 @@
+
+CREATE TABLE users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(100),
+phone VARCHAR(50),
+password TEXT,
+balance DOUBLE,
+status VARCHAR(20)
+);
+
+CREATE TABLE deposits(
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id INT,
+amount DOUBLE,
+status VARCHAR(20)
+);
+
+CREATE TABLE plans(
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id INT,
+amount DOUBLE,
+profit DOUBLE
+);
+
+CREATE TABLE withdraws(
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id INT,
+amount DOUBLE,
+status VARCHAR(20)
+);
